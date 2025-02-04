@@ -6,8 +6,8 @@ import os
 
 app = Flask(__name__)
 
-gapp_pswrd = 'yflw jeuh ryxp vvpq'
-my_email = 'tshifhiwachedzafordjr@gmail.com'
+gapp_pswrd = os.environ.get('yflw jeuh ryxp vvpq')
+my_email = os.environ.get('tshifhiwachedzafordjr@gmail.com')
 
 @app.route('/', methods=['POST', 'GET'])
 def home():

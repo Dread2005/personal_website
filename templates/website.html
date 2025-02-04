@@ -33,25 +33,24 @@
 						</header>
 						<p>Born and raised in the city of gold, I have been interested in programing since the age of 17, playing around with python and html. <br>
 							At the age of 19 after my high school career I decided to upscale my skills by taking a course to strengthen my python skills and add to my existing ones. During that year, I learnt valuable skills such as backend web development, front end web development,  web-scrapping, automation, and data analysis.<br>
-							I hope to use my skills as a data analysis to work and grow, I've found that data analysis is a passion that I have come to truly love, being able to visualise and tell a story using data is something that not everyone can do, and yet i find myself fascinated with the insights gleamed through the process.<br>
-							Although I have no real job experience my passion for data analysis as well as learning will more than make up for that, a chance is all I ask for.
-						</p>
+							I hope to use my skills as a data analysis to work and grow, I've found that data analysis is a passion that I have come to truly love, being able to visualise and tell a story using data is something that not everyone can do, and yet I find myself fascinated with the insights gleamed through the process.<br>
+							Although I have no real job experience my passion for data analysis as well as learning will more than make up for that.
 					</section>
 				<section id="three">
 						<h2>Get In Touch</h2>
 						<p>Get in touch with me via email or give me a call.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form method="post" action="{{url_for('home')}}">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-12"><input type='text' name="message" id="message" placeholder="Message"/></div>
 									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">

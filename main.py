@@ -3,11 +3,13 @@ from sqlite3 import connect
 from flask import Flask, render_template, url_for, request
 import smtplib
 import os
+import peakaboo
+
 
 app = Flask(__name__)
 
-gapp_pswrd = os.environ.get('yflw jeuh ryxp vvpq')
-my_email = os.environ.get('tshifhiwachedzafordjr@gmail.com')
+gapp_pswrd = peakaboo.gapp_pswrd
+my_email = 'tshifhiwachedzafordjr@gmail.com'
 
 @app.route('/', methods=['POST', 'GET'])
 def home():
